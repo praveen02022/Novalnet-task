@@ -39,8 +39,8 @@ const Dashoard: React.FC = () => {
         setTask(gettask.data)
         setProjects(getproject.data)
         setHistorys(gethistory.data)
-        let heroicVillan = [...getdepartment.data, ...getproject.data, ...gettask.data, gethistory.data];
-        setUsers(heroicVillan.flat())
+        let arr = [...getdepartment.data, ...getproject.data, ...gettask.data, gethistory.data];
+        setUsers(arr.flat())
     }
 
 
