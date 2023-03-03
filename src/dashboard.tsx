@@ -9,8 +9,7 @@ const Dashoard: React.FC = () => {
     const [projects, setProjects] = useState<any>([])
     const [historys, setHistorys] = useState<any>([])
     const username = localStorage.getItem('username')
-    const gettoken: any = localStorage.getItem('token')
-    const token = JSON.parse(gettoken)
+
 
 
     const navigate = useNavigate();
@@ -39,8 +38,6 @@ const Dashoard: React.FC = () => {
         setTask(gettask.data)
         setProjects(getproject.data)
         setHistorys(gethistory.data)
-        let arr = [...getdepartment.data, ...getproject.data, ...gettask.data, gethistory.data];
-        setUsers(arr.flat())
     }
 
 

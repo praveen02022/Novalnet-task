@@ -48,9 +48,6 @@ function Signup() {
     const mobileError: any = errors.mobileNo?.message;
     const emailError: any = errors.email?.message;
     const passwordError: any = errors.password?.message;
-    const confirmPasswordError: any = errors.confirmpassword?.message;
-    const doberror: any = errors.dob?.message;
-    const ageerror: any = errors.age?.message;
     const handleSignup = async (data: any) => {
       setLoading(true);
       try {
