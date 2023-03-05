@@ -1,15 +1,26 @@
 const mongoose = require("mongoose");
-const TaskHistroy = require("./taskHistroy");
 const Schema = mongoose.Schema;
 
 const departmentSchema = new Schema({
 
-  departmentName: {
+  department: {
+    type: String,
+    required: true,
+  },
+  projectName: {
+    type: String,
+    required: true,
+  },
+  taskName: {
+    type: String,
+    required: true,
+  },
+  taskHistory: {
     type: String,
     required: true,
   },
 });
 
-const Department = mongoose.model("department", departmentSchema);
+const Department = mongoose.model("Usersdetails", departmentSchema);
 
 module.exports = Department;
